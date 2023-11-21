@@ -1,1 +1,1 @@
-![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/oleksandrblazhko/ai-213-golovnin/Laboratory_work_7/2-SoftwareDesign/2.7-PlantUML/DataModel.puml)
+![](www.plantuml.com/plantuml/png/dP6nJWCn38PtFuL7EfG7k05LuX4G3n3bt3OY95BYWm4XbJ8mmiJAAvmgLLGTZbTmtWX7TnCRboNo7t-VBMMLsIJkxZsmOqzuc-dQP4AEQBTaxp14fwL_yE1fpJLFRhDbR5qYoou6C9PZmaR9r03Kr8IDgcxYcXzD8dm2G3rT9blL5_8XXxANeUpa9D_bLGxIQtr2EOzXUIdxANwJVl67_fAZDXtLyQdtMNhKBcMgSjJyo51VLR8hxuiwVLeFbyjPu_yFNLxDs1GRTC7whYLuXXM5Ll_b5m00)
