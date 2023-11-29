@@ -16,7 +16,7 @@ public class AirClear{
     //method
     public String getAirClearInfo(String user, String password, String location) {
         String result = "";
-        if ( password.length() > 20 || password.length() < 5 || !user.matches("^[a-zA-Z\\s]+$") || user.isBlank() || location.length() > 10) {
+        if ( password.length() > 20 || password.length() < 6 || !user.matches("^[a-zA-Z\\s]+$") || user.isBlank() || location.length() > 10) {
             result = "-1";
         }
         result = """
