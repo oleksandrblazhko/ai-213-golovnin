@@ -1,4 +1,4 @@
-package com.lab9.airclearstatechecker.entity;
+package com.lab9.airclearchecker.entity;
 
 import jakarta.persistence.*;
 

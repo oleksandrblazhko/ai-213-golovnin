@@ -1,4 +1,4 @@
-package com.lab9.airclearstatechecker.entity;
+package com.lab9.airclearchecker.entity;
 
 import jakarta.persistence.*;
 
@@ -9,15 +9,15 @@ public class User {
     private int id;
     @Column(name = "full_name")
     private String fullName;
-    @Column(name = "date_of_birth")
-    private String dateOfBirth;
-    @Column(name = "gender")
-    private String gender;
+    @Column(name = "location")
+    private String location;
+    @Column(name = "password")
+    private String password;
 
-    public User(String fullName, String dateOfBirth, String gender) {
+    public User(String fullName, String location, String password) {
         this.fullName = fullName;
-        this.dateOfBirth = dateOfBirth;
-        this.gender = gender;
+        this.location = location;
+        this.password = password;
     }
 
     public User() {
@@ -29,8 +29,8 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", fullName='" + fullName + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", gender='" + gender + '\'' +
+                ", location='" + location + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 
@@ -50,19 +50,19 @@ public class User {
         this.fullName = fullName;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public String getlocation() {
+        return location;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setlocation(String location) {
+        this.location = location;
     }
 
-    public String getGender() {
-        return gender;
+    public String getPassword() {
+        return password;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

@@ -1,26 +1,26 @@
-package com.lab9.airclearstatechecker.entity;
+package com.lab9.airclearchecker.entity;
 
 import jakarta.persistence.*;
 
 @Entity
-public class AirClear {
+public class AirClear{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @Column(name = "gender")
-    private String gender;
-    @Column(name = "date_of_birth")
-    private String dateOfBirth;
-    @Column(name = "air_clear_state")
-    private String airClearState;
+    @Column(name = "password")
+    private String password;
+    @Column(name = "location")
+    private String location;
+    @Column(name = "air_clear ")
+    private String airClear ;
     //method
-    public String getAirClearStateInfo(String user, String gender, Date dateOfBirth) {
+    public String getAirClearInfo(String user, String password, String location) {
         String result = "";
-        if (gender.length() > 20 || !user.matches("^[a-zA-Z\\s]+$") || user.isBlank() || dateOfBirth.length() > 10) {
+        if ( password.length() > 20 || password.length() < 5 || !user.matches("^[a-zA-Z\\s]+$") || user.isBlank() || location.length() > 10) {
             result = "-1";
         }
         result = """
-                        Your work place now has excellent air quality.
+                        Your town in general now has excellent air quality.
                         The level of air pollution at the moment meets all norms and safety standards. 
                         You can enjoy fresh air and safe living conditions.
                         Air Clear = 80 %
@@ -28,10 +28,10 @@ public class AirClear {
         return result;
     }
 
-    public AirClear(String gender, String dateOfBirth, String airClearState) {
-        this.gender = gender;
-        this.dateOfBirth = dateOfBirth;
-        this.airClearState = airClearState;
+    public AirClear(String password, String location, String airClear) {
+        this.password = password;
+        this.location = location;
+        this.airClear  = airClear;
     }
 
     public AirClear() {
@@ -42,9 +42,9 @@ public class AirClear {
     public String toString() {
         return "AirClear{" +
                 "id=" + id +
-                ", gender='" + gender + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", airClearState='" + airClearState + '\'' +
+                ", password='" + password + '\'' +
+                ", location='" + location + '\'' +
+                ", airClear='" + airClear  + '\'' +
                 '}';
     }
 
@@ -56,27 +56,27 @@ public class AirClear {
         this.id = id;
     }
 
-    public String getGender() {
-        return gender;
+    public String getPassword() {
+        returnPassword;
     }
 
-    public void setGender(String gendateOfBirthder) {
-        this.gender = gender;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public String getlocation() {
+        return location;
     }
 
-    public void setdateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setlocation(String location) {
+        this.location = location;
     }
 
-    public String getAirConditionState() {
-        return airConditionState;
+    public String getAirCondition() {
+        return airCondition;
     }
 
-    public void setAirConditionState(String airConditionState) {
-        this.airConditionState = airConditionState;
+    public void setAirCondition (String airCondition) {
+        this.airCondition = airCondition;
     }
 }

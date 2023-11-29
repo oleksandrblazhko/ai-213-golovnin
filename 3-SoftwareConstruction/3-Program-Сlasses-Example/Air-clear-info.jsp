@@ -10,7 +10,7 @@
 <body>
 <div>
     <center>
-        <h1>Get Air Clear State</h1>
+        <h1>Get Air Clear Info</h1>
         <h3>Result:</h3>
         <div>${airclearInfo}</div>
     </center>

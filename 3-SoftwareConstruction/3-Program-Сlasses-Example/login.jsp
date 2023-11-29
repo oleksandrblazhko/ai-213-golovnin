@@ -14,11 +14,11 @@
             <label for="username">username:</label>
             <input type="text" id="username" name="username" required><br>
 
-            <label for="gender">gender:</label>
-            <input type="text" id="gender" name="gender" required><br>
+            <label for="password">password:</label>
+            <input type="text" id="password" name="password" required><br>
 
-            <label for="date_of_birth">date_of_birth:</label>
-            <input type="text" id="date_of_birth" name="date_of_birth" required><br>
+            <label for="location">location:</label>
+            <input type="text" id="location" name="location" required><br>
 
             <button type="submit">OK</button>
         </form>
